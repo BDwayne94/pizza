@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Town</title>
+    <link rel="stylesheet" href="./stylesheet.css">
+</head>
+
+<body>
+
+    <header class="site-header">
+        <h1>Better Pizza Better Sauce Better than Papa Johns</h1>
+    </header>
+    <div id="cart-count">Cart: 0 items</div>
+
+    
+    <div class="container">  
+        <!-- Side Bar-->
+        <aside class="sidebar">
+            <h3> Cool Stuff Below</h3>
+            <a href="index.html">Home Page</a>
+            <a href="Ultimate-Challenge.html">Ultimate Challenge</a>
+            <a href="#">Prices</a>
+            <a href="#">Specials</a>
+            <a href="#">Info</a>
+            <a href="#">Menu</a>
+
+
+        </aside>
+        <main class="content">
+            <h1>The Best Pizza</h1> 
+    
+            <p>Hungry? We got pizza!</p>
+            <br>
+            <ul>
+                
+                     <li>
+                        <h3 class="pizza">Pepperoni</h3>
+                        <img src="Images/pepperoni.webp" alt="Pepperoni pizza">
+                        <button onclick="addToCart('Pepperoni')" >Add to Order</button>
+                    </li>
+                    <li>
+                        <h3 class="pizza">Chesse</h3>
+                        <img src="Images/cheese.jpg" alt="Cheese Pizza">
+                         <button onclick="addToCart('Cheese')">Add to Order </button>
+                    </li>
+                     <li>
+                        <h3 class="pizza">Meat Lovers</h3>
+                        <img src="Images/meat-lovers.jpg" alt="Meat Lovers">
+                        <button onclick="addToCart('Meat Lovers')" >Add to Order</button>
+                    </li>
+                     <li>
+                        <h3 class="pizza">Hawaiian</h3>
+                        <img src="Images/hawaiian.jpg" alt="Hawaiian Pizza">
+                        <button onclick= "addToCart('Hawaiian')" >Add to Order</button>
+                    </li>
+                     <li>
+                        <h3 class="pizza">Supreme</h3>
+                        <img src="Images/supreme.jpg" alt="Supreme pizza">
+                        <button onclick="addToCart('Supreme')" >Add to Order</button>
+                    </li>
+
+
+            </ul>
+        </main>
+ </div>
+  
+    <footer>
+        Catchy slogan 
+    </footer>
+    
+</body>
+</html>

@@ -1,45 +1,67 @@
-/* 
-Base Reset
-*/
-
- * {
-    box-sizing: border-box;
+/* Global layout */
+body {
     margin: 0;
-    padding: 0;
     font-family: Arial, sans-serif;
+    background-image: url("Images/pizza-bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
 
-/*
-Layout container
-*/
+/* Header with gradient */
+.site-header {
+    background: linear-gradient(to right, #ff4d4d, #ff9900);
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+/* Main container */
 .container {
-    
-    padding-left: 1rem;
     display: flex;
-    gap: 1rem;
-    
+    margin: 20px;
 }
 
-/* Sidebar styling */
+/* Sidebar */
 .sidebar {
-    background: whitesmoke;
-    color: burlywood;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
     width: 200px;
-    gap: 1rem;
+    padding: 20px;
+    margin-right: 20px;
+    border: 3px solid #ff4d4d;
+    background-color: rgba(255, 255, 255, 0.8);
 }
 
+/* Sidebar links */
 .sidebar a {
-    color: rgb(137, 127, 127);
-    text-decoration: none;
-    padding: 0.5rem;
-    border-radius: 6px;
-    transition: transform 0.2s, background 0.2s;
+    display: block;
+    margin-bottom: 10px;
 }
 
-.sidebar a:hover {
-    background: rgb(190, 102, 102);
-    transform: scale(1.1);
+/* Main content */
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 10px;
+}
+
+/* Pizza list */
+.pizza-list li {
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+.pizza-list img {
+    width: 200px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #333;
+    color: white;
 }

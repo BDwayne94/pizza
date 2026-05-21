@@ -1,4 +1,4 @@
-/* Global layout */
+/* Global layout - fluid and scalable */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -22,7 +22,7 @@ body {
     margin: 20px;
 }
 
-/* Sidebar */
+/* Shared sidebar styles */
 .sidebar {
     width: 200px;
     padding: 20px;
@@ -64,4 +64,24 @@ footer {
     margin-top: 20px;
     background-color: #333;
     color: white;
+}
+
+/* Media Query #1 - Tablet */
+@media (max-width: 800px) {
+    .container {
+        flex-direction: column; /* stack sidebar on top */
+    }
+    .sidebar {
+        width: 100%;
+    }
+}
+
+/* Media Query #2 - Mobile */
+@media (max-width: 450px) {
+    h1, h2, h3 {
+        font-size: 1.2rem;
+    }
+    .pizza-list img {
+        width: 100%; /* fully fluid images */
+    }
 }

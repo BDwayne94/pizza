@@ -16,13 +16,13 @@ body {
     color: white;
 }
 
-/* Main container */
+/* FLEX CONTAINER #1 — Main page layout */
 .container {
     display: flex;
     margin: 20px;
 }
 
-/* Shared sidebar styles */
+/* Sidebar styles */
 .sidebar {
     width: 200px;
     padding: 20px;
@@ -31,13 +31,14 @@ body {
     background-color: rgba(255, 255, 255, 0.8);
 }
 
-/* Sidebar links */
-.sidebar a {
-    display: block;
-    margin-bottom: 10px;
+/* FLEX CONTAINER #2 — Sidebar navigation links */
+.sidebar nav {
+    display: flex;          /* second flex container */
+    flex-direction: column;
+    gap: 10px;
 }
 
-/* Main content */
+/* Main content area */
 .content {
     flex: 1;
     padding: 20px;
@@ -45,14 +46,17 @@ body {
     border-radius: 10px;
 }
 
-/* Pizza list */
-.pizza-list li {
-    margin-bottom: 20px;
+/* GRID LAYOUT — Pizza list */
+.pizza-list {
+    display: grid; /* required grid component */
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 20px;
+    padding: 0;
     list-style: none;
 }
 
 .pizza-list img {
-    width: 200px;
+    width: 100%;
     border-radius: 8px;
     margin-top: 10px;
 }
@@ -66,22 +70,34 @@ footer {
     color: white;
 }
 
-/* Media Query #1 - Tablet */
+/* ------------------------------ */
+/* MEDIA QUERIES FOR RESPONSIVENESS */
+/* ------------------------------ */
+
+/* Tablet breakpoint — stack layout */
 @media (max-width: 800px) {
     .container {
         flex-direction: column; /* stack sidebar on top */
     }
     .sidebar {
         width: 100%;
+        margin-right: 0;
+        text-align: center;
     }
 }
 
-/* Media Query #2 - Mobile */
+/* Mobile breakpoint — fix text + images */
 @media (max-width: 450px) {
     h1, h2, h3 {
         font-size: 1.2rem;
     }
-    .pizza-list img {
-        width: 100%; /* fully fluid images */
+
+    .sidebar nav a {
+        font-size: 1rem;
+        padding: 8px;
+    }
+
+    .pizza-list {
+        grid-template-columns: 1fr; /* single column grid */
     }
 }

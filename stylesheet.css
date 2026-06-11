@@ -17,18 +17,20 @@ body {
 .site-header {
     background: linear-gradient(to right, #ff4d4d, #ff9900);
     padding: 10px;
-    text-align: center;
     color: white;
 }
 
 .site-header h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
     margin: 0;
 }
 
-.site-header img {
+.logo {
     height: 100px;
     width: auto;
-    vertical-align: middle;
 }
 
 /* FLEX CONTAINER #1 — Main page layout */

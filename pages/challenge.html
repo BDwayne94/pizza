@@ -3,32 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ultimate Challenge</title>
-    <link rel="stylesheet" href="../stylesheet.css">
+    <title>Ultimate Challenge – Pizza Town</title>
+
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="../css/stylesheet.css">
+
+    <!-- Font Awesome (only one link needed) -->
     <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
 
+<!-- Anchor for Back to Top -->
+<div id="top"></div>
+
+<!-- ===========================
+     HEADER
+     =========================== -->
 <header class="site-header">
     <h1>
-        <img class="logo" src="/pizza/Images/Ff9-pizza.webp" alt="Final Fantasy pizza">
+        <img class="logo" src="../images/ff9-pizza.webp" alt="Final Fantasy pizza logo">
         Better Pizza • Better Sauce • Better than Papa Johns
     </h1>
 </header>
 
+<!-- ===========================
+     MAIN LAYOUT
+     =========================== -->
 <div class="container">
-    
+
+    <!-- Sidebar Navigation -->
     <aside class="sidebar">
         <h3>Cool Stuff Below</h3>
-          <nav>
+
+        <nav>
             <a href="/pizza/index.html">
                 <i class="fa-solid fa-house"></i> Home
             </a>
@@ -41,36 +50,52 @@
             <a href="/pizza/pages/info.html">
                 <i class="fa-solid fa-circle-info"></i> Info
             </a>
-            <a href="https://www.dominos.com" target="_blank">Domino's (External)</a> <!-- external link -->
-        </nav>	
-
-
+            <a href="https://www.dominos.com" target="_blank" rel="noopener">
+                Domino's (External)
+            </a>
+        </nav>
     </aside>
 
-    <section class="steps">
-        <div class="content">
-            <h2>Step 1</h2>
-            <p>Create your dream pizza using any toppings you want.</p>
-        </div>
+    <!-- ===========================
+         MAIN CONTENT
+         =========================== -->
+    <main class="content">
 
-        <div class="content">
-            <h2>Step 2</h2>
-            <p>Submit your creation to our Pizza Masters for judging.</p>
-        </div>
+        <h2>The Ultimate Challenge</h2>
+        <p>Think you can conquer the Pizza Town Challenge? Follow the steps below!</p>
 
-        <div class="content">
-            <h2>Step 3</h2>
-            <p>Win free pizza for a year if your creation is chosen.</p>
-        </div>
-    </section>
+        <section class="steps">
+
+            <div class="content">
+                <h2>Step 1</h2>
+                <p>Create your dream pizza using any toppings you want.</p>
+            </div>
+
+            <div class="content">
+                <h2>Step 2</h2>
+                <p>Submit your creation to our Pizza Masters for judging.</p>
+            </div>
+
+            <div class="content">
+                <h2>Step 3</h2>
+                <p>Win free pizza for a year if your creation is chosen.</p>
+            </div>
+
+        </section>
+
+    </main>
 
 </div>
 
-
+<!-- ===========================
+     FOOTER
+     =========================== -->
 <footer>
-    Return to 
-    <a href="#top">Back to Top</a> <!-- same-page placeholder link -->
+    <nav>
+        <a href="#top">Back to Top</a>
+    </nav>
 </footer>
 
 </body>
 </html>
+

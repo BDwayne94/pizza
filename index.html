@@ -4,37 +4,44 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizza Town</title>
-    <link rel="stylesheet" href="stylesheet.css">
 
+    <!-- Main stylesheet -->
+    <link rel="stylesheet" href="css/stylesheet.css">
+
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Macondo+Swash+Caps&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome (only one link needed) -->
     <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-</head> 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
 
 <body>
 
-<!-- Placeholder for "Back to Top" link -->
+<!-- Anchor for Back to Top -->
 <div id="top"></div>
 
+<!-- ===========================
+     HEADER
+     =========================== -->
 <header class="site-header">
     <h1>
-        <img class="logo" src="Images/Ff9-pizza.webp" alt="Final Fantasy pizza">
+        <img class="logo" src="images/ff9-pizza.webp" alt="Final Fantasy pizza logo">
         Better Pizza • Better Sauce • Better than Papa Johns
     </h1>
 </header>
 
+<!-- ===========================
+     MAIN LAYOUT
+     =========================== -->
 <div class="container">
 
-       <aside class="sidebar">
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
         <h3>Cool Stuff Below</h3>
+
         <nav>
             <a href="/pizza/index.html">
                 <i class="fa-solid fa-house"></i> Home
@@ -48,46 +55,52 @@
             <a href="/pizza/pages/info.html">
                 <i class="fa-solid fa-circle-info"></i> Info
             </a>
-            <a href="https://www.dominos.com" target="_blank">Domino's (External)</a> <!-- external link -->
-        </nav>	
-
+            <a href="https://www.dominos.com" target="_blank" rel="noopener">
+                Domino's (External)
+            </a>
+        </nav>
     </aside>
 
+    <!-- Main Content -->
     <main class="content">
         <h2>The Best Pizza</h2>
         <p>Hungry? We got pizza!</p>
-         <!-- Scalable images -->
+
+        <!-- Pizza Grid -->
         <ul class="pizza-list">
             <li>
                 <h4>Pepperoni</h4>
-                <img src="Images/pepperoni.webp" alt="pepperoni pizza">
+                <img src="images/pepperoni.webp" alt="Pepperoni pizza">
             </li>
             <li>
                 <h4>Cheese</h4>
-                <img src="Images/cheese.jpg" alt="cheese pizza">
+                <img src="images/cheese.jpg" alt="Cheese pizza">
             </li>
             <li>
                 <h4>Meat Lovers</h4>
-                <img src="Images/meat-lovers.jpg" alt="meat lovers pizza">
+                <img src="images/meat-lovers.jpg" alt="Meat lovers pizza">
             </li>
             <li>
                 <h4>Hawaiian</h4>
-                <img src="Images/hawaiian.jpg" alt="hawaiian pizza">
+                <img src="images/hawaiian.jpg" alt="Hawaiian pizza">
             </li>
             <li>
                 <h4>Supreme</h4>
-                <img src="Images/supreme.jpg" alt="supreme pizza">
+                <img src="images/supreme.jpg" alt="Supreme pizza">
             </li>
         </ul>
     </main>
 
 </div>
 
-    <footer>
-        <nav>
-            <a href="#top">Back to Top</a>
-        </nav>
-    </footer>
+<!-- ===========================
+     FOOTER
+     =========================== -->
+<footer>
+    <nav>
+        <a href="#top">Back to Top</a>
+    </nav>
+</footer>
 
 </body>
 </html>
